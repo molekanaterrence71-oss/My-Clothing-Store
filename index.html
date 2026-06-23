@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXUS | Premium Apparel</title>
+    <title>AURA | Premium Clothing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="loader"><div class="spinner"></div></div>
-
-    <nav>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">NEXUS.</a>
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AU<span>RA</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-icons">
                 <a href="search.html"><i class="fas fa-search"></i></a>
-                <a href="login.html"><i class="fas fa-user"></i></a>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <a href="login.html" id="user-btn"><i class="far fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <header class="hero container reveal">
-        <div class="hero-content" style="padding: 100px 0; text-align: center;">
-            <h1 style="font-size: 4rem; margin-bottom: 20px;">Redefine Your Style</h1>
-            <p style="color: #aaa; margin-bottom: 30px;">Premium streetwear engineered for the modern era.</p>
-            <a href="shop.html" class="btn-primary">Shop New Arrivals</a>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Define Your <span>Style</span></h1>
+            <p>Discover the latest trends in urban and premium streetwear. Engineered for comfort, designed for impact.</p>
+            <a href="shop.html" class="btn-primary">Shop Now</a>
         </div>
     </header>
 
-    <section class="container reveal" style="padding: 50px 0;">
-        <h2 style="margin-bottom: 30px; border-left: 4px solid var(--accent-color); padding-left: 10px;">Trending Now</h2>
-        <div id="product-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+    <section class="categories section-padding">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card glass-card">
+                <h3>Men's Collection</h3>
+                <a href="shop.html?category=mens" class="btn-secondary">Explore</a>
             </div>
+            <div class="category-card glass-card">
+                <h3>Women's Collection</h3>
+                <a href="shop.html?category=womens" class="btn-secondary">Explore</a>
+            </div>
+            <div class="category-card glass-card">
+                <h3>Accessories</h3>
+                <a href="shop.html?category=accessories" class="btn-secondary">Explore</a>
+            </div>
+        </div>
     </section>
 
     <script type="module" src="js/firebase-config.js"></script>
