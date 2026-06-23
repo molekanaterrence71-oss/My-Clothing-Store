@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | AURA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <main class="section-padding">
+        <h1 class="section-title">New <span>Arrivals</span></h1>
+        
+        <div class="shop-controls glass-card">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="mens">Men's</option>
+                <option value="womens">Women's</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <select id="sort-filter">
+                <option value="newest">Newest First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
 
+        <div class="product-grid" id="product-container">
+            <div class="loader">Loading products...</div>
+        </div>
+    </main>
+
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/products.js"></script>
+</body>
+</html>
